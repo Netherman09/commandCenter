@@ -16,18 +16,9 @@ export default function App() {
   }, []); // Das leere Array [] sorgt dafür, dass dies nur 1x beim Laden passiert
   
   return (
-    <div className="min-h-screen bg-slate-950 text-white flex flex-col items-center justify-center font-sans">
-      <div className="bg-slate-900 border border-slate-800 p-8 rounded-2xl shadow-2xl text-center max-w-sm">
-        <h1 className="text-3xl font-bold text-indigo-400 mb-2 tracking-tight">
-          Command Center
-        </h1>
-        <input ref={inputRef} type="text"></input>
-        <p className="text-slate-400 text-sm">
-          Tailwind v4 läuft nativ und blitzschnell auf deinem Surface!
-        </p>
-        <button className="mt-6 px-4 py-2 bg-indigo-600 hover:bg-indigo-500 active:scale-95 transition-all text-sm font-medium rounded-lg shadow-lg shadow-indigo-600/20">
-          Loslegen
-        </button>
+    <div className="min-h-screen bg-zinc-950 text-white flex flex-col items-center justify-center font-sans">
+      <div class="mt-2.5">
+        <input ref={inputRef} type="text" class="block w-full rounded-md bg-white/5 px-3.5 py-2 text-base text-white outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500" />
       </div>
     </div>
   );
