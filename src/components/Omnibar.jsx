@@ -33,7 +33,7 @@ export default function App() {
   const performAction = (command) => {
     // Hier entscheidest du, was passiert
     alert("Befehl ausgeführt: " + command);
-    alert(command.slice(0, 2))
+    const prefix = command.slice(0, 2);
     //if (command.trim(2))
     const searchUrl = `https://www.google.com/search?q=${encodeURIComponent(command)}`;
     window.location.href = searchUrl
